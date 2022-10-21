@@ -1,0 +1,8 @@
+name=Random Start Date
+poster=rsdnew.png
+id=RandStart
+description=Adds random options for Start Month and Start Day sandbox options
+modversion=2.1.0
+authors=albion
+icon=rsdmini.png
+versionMin=41.65

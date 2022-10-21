@@ -1,0 +1,9 @@
+VERSION = 1,
+
+option RSD.randomiseDate
+{
+    type = boolean,
+    default = false,
+    page = TimeOptions,
+    translation = ZStrength_option4,
+}

@@ -1,0 +1,18 @@
+version=1
+id=2811002822
+title=Random Start Date
+description=This mod adds random choices for the start day and month, so that players can see a greater variety in starting conditions.
+description=
+description=If you want to use this mod for a co-op server, you need to have the mod enabled from the main menu, or the option won't show up.
+description=
+description=This mod is safe to remove after starting your save. Don't add it to existing saves or strange things might happen.
+description=
+description=For dedicated servers:
+description=[code]RSD = {
+description=    randomiseDate = true,
+description=},[/code]
+description=
+description=If you enjoy my mods, I'd appreciate it a lot if you considered leaving me a tip ^u^
+description=[url=https://ko-fi.com/starseamstress][img]https://storage.ko-fi.com/cdn/brandasset/kofi_button_dark.png[/img][/url]
+tags=Build 41;Interface;Misc;Multiplayer
+visibility=public
