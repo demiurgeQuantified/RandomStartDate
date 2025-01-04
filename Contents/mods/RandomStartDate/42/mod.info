@@ -1,0 +1,9 @@
+name=Random Start Date
+id=RandomStartDate
+description=Adds an option to randomise the start date.
+require=\StarlitLibrary
+poster=rsdnew.png
+icon=rsdmini.png
+modversion=42-1.0.0
+versionMin=42.0.2
+author=albion

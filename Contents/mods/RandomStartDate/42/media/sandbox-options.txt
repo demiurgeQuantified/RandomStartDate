@@ -1,0 +1,9 @@
+VERSION = 1,
+
+option RandomStartDate.randomiseDate
+{
+    type = boolean,
+    default = true,
+    page = TimeOptions,
+    translation = ZStrength_option4,
+}
