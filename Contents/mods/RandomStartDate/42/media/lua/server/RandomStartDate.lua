@@ -1,11 +1,15 @@
-if isClient() then return end
+if isClient() then
+    return
+end
 
 local RAND = newrandom()
 
+
 local RandomStartDate = {}
 
+
 ---Randomises the start date and sets the current date to it.
-RandomStartDate.randomiseStartDate = function()
+function RandomStartDate.randomiseStartDate()
     local gameTime = getGameTime()
 
     local startMonth = RAND:random(12) - 1
@@ -19,14 +23,13 @@ RandomStartDate.randomiseStartDate = function()
     gameTime:setStartDay(startDay)
 end
 
----Called during the loading process.
----@param isNewGame boolean Whether it is a new game.
-RandomStartDate.onWorldLoaded = function(isNewGame)
+
+Events.OnLoadRadioScripts.Add(function(_, isNewGame)
+    ---@diagnostic disable-next-line: undefined-field
     if isNewGame and SandboxVars.RandomStartDate.randomiseDate then
         RandomStartDate.randomiseStartDate()
     end
-end
+end)
 
-Events.OnInitGlobalModData.Add(RandomStartDate.onWorldLoaded)
 
 return RandomStartDate
